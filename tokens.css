@@ -28,3 +28,20 @@
   --ease-in-out:cubic-bezier(.65,0,.35,1);
   --dur-short:150ms;
 }
+
+/* Homepage roles stay scoped so presentation canvases retain their system. */
+.overview-page {
+  --color-portal-paper:oklch(100% 0 0);
+  --color-portal-panel:oklch(96.5% .003 260);
+  --color-portal-hover:oklch(93.5% .006 260);
+  --color-portal-ink:oklch(22% .008 260);
+  --color-portal-body:oklch(40% .008 260);
+  --color-portal-muted:oklch(48% .008 260);
+  --color-portal-footer:oklch(20% .008 260);
+  --color-portal-footer-ink:oklch(98% 0 0);
+  --portal-width:1240px;
+  --portal-gutter:clamp(20px,4vw,48px);
+  --radius-portal:20px;
+  --text-portal-display:clamp(36px,4.5vw,60px);
+  --text-portal-title:clamp(26px,3vw,36px);
+}
