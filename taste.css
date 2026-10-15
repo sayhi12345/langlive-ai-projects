@@ -75,24 +75,17 @@
 .overview-page .project-grid { grid-template-columns:1fr 1fr; grid-template-rows:1fr 1fr; gap:20px; }
 .overview-page .section-heading p { display:none; }
 .overview-page .project {
-  position:relative; display:grid; grid-template-columns:minmax(0,1fr);
-  grid-template-rows:auto 1fr auto; gap:16px; align-items:start;
+  position:relative; display:grid; grid-template-columns:132px minmax(0,1fr);
+  grid-template-rows:auto 1fr auto; gap:8px 24px; align-items:start;
   padding:20px; border:0; background:var(--color-soft);
 }
 .overview-page .project:last-child { border:0; }
 .overview-page .project-preview {
-  grid-column:1; grid-row:1 / 4; width:150px; height:100%; min-height:140px;
-  object-fit:cover; object-position:top; background:var(--color-surface);
+  grid-column:1; grid-row:1 / 4; align-self:center; width:132px; height:132px;
+  object-fit:contain; object-position:center; background:transparent;
 }
-.overview-page .project-stat {
-  display:flex; flex-direction:column; justify-content:center; padding:12px;
-  background:var(--color-ink); color:var(--color-surface);
-}
-.overview-page .project[href="ai-eden-harness.html"] .project-preview { object-position:center 75%; }
-.overview-page .project-stat strong { font-size:42px; letter-spacing:-2px; font-variant-numeric:tabular-nums; }
-.overview-page .project-stat strong span { font-size:22px; letter-spacing:0; }
-.overview-page .project-stat p { font-size:18px; color:inherit; margin-top:12px; }
-.overview-page .project :is(h3,.project-summary,.project-end) { grid-column:1; }
+.overview-page .project[href="ai-live-avatar.html"] .project-preview { object-fit:cover; object-position:center 45%; }
+.overview-page .project :is(h3,.project-summary,.project-end) { grid-column:2; }
 .overview-page .project h3 span,.overview-page .project-topics { display:none; }
 .overview-page .project p { font-size:22px; line-height:1.4; }
 .overview-page .project-end { flex-direction:row; justify-content:space-between; gap:12px; align-items:center; }
@@ -116,13 +109,11 @@
 }
 @media (max-width:960px) {
   .overview-page .project-grid { display:grid; grid-template-columns:1fr; grid-template-rows:auto; }
-  .overview-page .project { grid-template-columns:minmax(0,1fr); gap:16px; padding:16px; }
-  .overview-page .project-preview { width:100px; min-height:160px; }
+  .overview-page .project { grid-template-columns:88px minmax(0,1fr); gap:12px 16px; padding:16px; }
+  .overview-page .project-preview { width:88px; height:112px; }
   .overview-page .project h3 { font-size:24px; }
   .overview-page .project p { font-size:18px; }
-  .overview-page .project-stat strong { font-size:30px; letter-spacing:-1px; }
-  .overview-page .project-stat p { font-size:16px; }
-  .overview-page .project-end { flex-wrap:wrap; }
+      .overview-page .project-end { flex-wrap:wrap; }
   .overview-page .project-count,.overview-page .project-action { font-size:16px; }
   .deck-theme .slide :is(.slide-masthead,.slide-header,.slide-head) { font-size:16px; }
   .deck-avatar .priority-list li { grid-template-columns:1fr; }
