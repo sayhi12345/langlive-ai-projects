@@ -167,7 +167,7 @@
   .deck-service .slide { gap:16px; }
   .deck-service .diagram-container { max-width:1152px; }
   .deck-service .diagram-container svg { max-height:340px; }
-  .deck-service :is(#slide-02,#slide-06) .diagram-container svg { max-height:390px; }
+  .deck-service :is(#slide-03,#slide-07) .diagram-container svg { max-height:390px; }
   .deck-service .node-name { font-size:26px; }
   .deck-service :is(.node-sub,.edge-label text,.lane-label) { font-size:22px; }
   .deck-service .slide .takeaway { font-size:24px!important; padding:10px 16px; }
