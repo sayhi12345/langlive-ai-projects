@@ -116,7 +116,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
     .deck { width:1600px; transform:scale(var(--scale,1)); transform-origin:top left; background:var(--paper); }
     .slide { height:900px; padding:48px 88px 44px; display:flex; flex-direction:column; position:relative; overflow:hidden; background:var(--paper); }
     .slide[hidden] { display:none; }
-    .slide::after { content:attr(data-page) ' / 13'; position:absolute; right:88px; bottom:44px; font:16px var(--mono); color:var(--muted); }
+    .slide::after { content:attr(data-page) ' / 12'; position:absolute; right:88px; bottom:44px; font:16px var(--mono); color:var(--muted); }
     .slide-head { display:flex; justify-content:space-between; align-items:center; padding-bottom:24px; border-bottom:1px solid var(--line); font-size:18px; }
     .wordmark { font-family:var(--mono); font-size:20px; font-weight:400; letter-spacing:-.5px; }
     .slide-head span:last-child { color:var(--muted); font-size:16px; }
@@ -346,23 +346,11 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
   <main class="shell">
     <div class="frame">
       <div class="deck" aria-label="AI 虛擬主播對外簡報">
-        <section class="slide hero" id="slide-1" data-page="01" data-title="AI 虛擬主播" aria-labelledby="title-1">
-          <header class="slide-head"><span class="wordmark">AI LIVE AVATAR</span><span>產品介紹</span></header>
-          <div class="content">
-            <div class="mesh" aria-hidden="true"></div>
-            <p class="eyebrow">AI 虛擬主播</p>
-            <h1 id="title-1">讓角色，<br>走進即時互動</h1>
-            <p class="lead">有聲音、有個性，接續觀眾的話題。<br>讓聊天、抽牌與社群成為角色的互動內容。</p>
-            <div class="hero-tail"><span><i aria-hidden="true"></i>即時回覆</span><span><i aria-hidden="true"></i>人設一致</span><span><i aria-hidden="true"></i>直播互動</span><span><i aria-hidden="true"></i>社群自動發文</span></div>
-          </div>
-          <footer class="footer">虛擬角色互動體驗</footer>
-        </section>
-
-        <section class="slide experience" id="slide-2" data-page="02" data-title="觀眾參與的直播體驗" aria-labelledby="title-2" hidden>
+        <section class="slide experience" id="slide-1" data-page="01" data-title="觀眾參與的直播體驗" aria-labelledby="title-1">
           <header class="slide-head"><span class="wordmark">AI LIVE AVATAR</span><span>產品概念</span></header>
           <div class="content">
             <p class="eyebrow">互動帶動內容</p>
-            <h2 id="title-2">觀眾留言，成為節目內容</h2>
+            <h2 id="title-1">觀眾留言，成為節目內容</h2>
             <div class="split">
               <div>
                 <p class="statement">角色會聽見話題，<br>也會用自己的方式回應</p>
@@ -378,12 +366,11 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
           </div>
           <footer class="footer">創新體驗：結合角色對話、聲音與直播現場</footer>
         </section>
-
-        <section class="slide" id="slide-3" data-page="03" data-title="即時回覆的對話節奏" aria-labelledby="title-3" hidden>
+<section class="slide" id="slide-2" data-page="02" data-title="即時回覆的對話節奏" aria-labelledby="title-2" hidden>
           <header class="slide-head"><span class="wordmark">AI LIVE AVATAR</span><span>即時回覆</span></header>
           <div class="content">
             <p class="eyebrow">縮短觀眾的等待</p>
-            <h2 id="title-3">邊生成，邊回覆</h2>
+            <h2 id="title-2">邊生成，邊回覆</h2>
             <p class="lead">回覆逐步生成，直接接續語音回應，不必等整段回答完成。</p>
             <div class="speed" role="img" aria-label="回覆生成直接接續語音回應，語音驅動的角色動畫稍晚開始，時間軸為流程示意">
               <div class="speed-row"><strong>回覆生成</strong><div class="track"><b style="--length:82%;--offset:0%"></b></div><span class="caption">理解話題，逐步產生內容</span></div>
@@ -397,12 +384,11 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
           </div>
           <footer class="footer">回覆生成接續語音與角色動畫，降低等待完整答案的空白</footer>
         </section>
-
-        <section class="slide" id="slide-4" data-page="04" data-title="維持熟悉的角色個性" aria-labelledby="title-4" hidden>
+<section class="slide" id="slide-3" data-page="03" data-title="維持熟悉的角色個性" aria-labelledby="title-3" hidden>
           <header class="slide-head"><span class="wordmark">AI LIVE AVATAR</span><span>人設一致</span></header>
           <div class="content">
             <p class="eyebrow">角色設定持續參與每輪回覆</p>
-            <h2 id="title-4">換話題，也延續熟悉的個性</h2>
+            <h2 id="title-3">換話題，也延續熟悉的個性</h2>
             <p class="lead">以固定的角色設定約束回答，讓說話方式與互動界線保持一致。</p>
             <div class="persona-layout">
               <div class="persona-core"><span class="label">角色設定</span><h3>角色的核心</h3><p>身分與背景</p><p>個性與說話方式</p><p>互動界線與禁忌</p></div>
@@ -411,12 +397,11 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
           </div>
           <footer class="footer">以持續帶入的設定，降低對話中的角色偏移</footer>
         </section>
-
-        <section class="slide" id="slide-5" data-page="05" data-title="接續同場對話脈絡" aria-labelledby="title-5" hidden>
+<section class="slide" id="slide-4" data-page="04" data-title="接續同場對話脈絡" aria-labelledby="title-4" hidden>
           <header class="slide-head"><span class="wordmark">AI LIVE AVATAR</span><span>對話連貫</span></header>
           <div class="content">
             <p class="eyebrow">接得上話，互動才自然</p>
-            <h2 id="title-5">同場對話，記住聊過的重點</h2>
+            <h2 id="title-4">同場對話，記住聊過的重點</h2>
             <p class="lead">參考近期聊天與重點整理，讓角色能接續前面的話題。</p>
             <div class="context-layout">
               <div><div class="context-points"><article><span class="label">01</span><h3>近期對話</h3><p>保留剛聊過的內容，<br>掌握當下語境。</p></article><article><span class="label">02</span><h3>重點整理</h3><p>整理較早的聊天，<br>延續同場話題。</p></article></div><p class="scope">目前以單場連線為範圍。<br>重新連線後，會開始新的對話脈絡。</p></div>
@@ -425,12 +410,11 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
           </div>
           <footer class="footer">讓陪聊有延續感，減少反覆交代背景</footer>
         </section>
-
-        <section class="slide" id="slide-6" data-page="06" data-title="聊天室互動有順序" aria-labelledby="title-6" hidden>
+<section class="slide" id="slide-5" data-page="05" data-title="聊天室互動有順序" aria-labelledby="title-5" hidden>
           <header class="slide-head"><span class="wordmark">AI LIVE AVATAR</span><span>互動協調</span></header>
           <div class="content">
             <p class="eyebrow">重要需求優先</p>
-            <h2 id="title-6">主播一次專心回應一件事</h2>
+            <h2 id="title-5">主播一次專心回應一件事</h2>
             <p class="lead">將不同類型的互動排好順序，讓直播回覆更有條理。</p>
             <div class="priority-layout">
               <ol class="priority-list"><li><span class="number">01</span><div><h3>占卜需求</h3><p>優先處理，完成後回傳文字結果。</p></div></li><li><span class="number">02</span><div><h3>禮物回應</h3><p>接住觀眾的支持，安排感謝與互動。</p></div></li><li><span class="number">03</span><div><h3>日常聊天</h3><p>依序接續一般留言，保持聊天節奏。</p></div></li></ol>
@@ -439,37 +423,34 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
           </div>
           <footer class="footer">高流量時優先處理重要需求，過期的一般互動可能略過</footer>
         </section>
-
-        <section class="slide" id="slide-7" data-page="07" data-title="完整的直播節目節奏" aria-labelledby="title-7" hidden>
+<section class="slide" id="slide-6" data-page="06" data-title="完整的直播節目節奏" aria-labelledby="title-6" hidden>
           <header class="slide-head"><span class="wordmark">AI LIVE AVATAR</span><span>節目流程</span></header>
           <div class="content">
             <p class="eyebrow">自動銜接直播階段</p>
-            <h2 id="title-7">有暖場、有互動，也有告別</h2>
+            <h2 id="title-6">有暖場、有互動，也有告別</h2>
             <p class="lead">將角色安排進一場完整節目，讓觀眾有清楚的參與節奏。</p>
             <ol class="timeline"><li><span class="number">01</span><h3>開播準備</h3><p>建立角色連線，<br>確認播出來源。</p></li><li><span class="number">02</span><h3>主題暖場</h3><p>帶入星象話題，<br>邀請每日抽牌。</p></li><li><span class="number">03</span><h3>聊天室互動</h3><p>依序回應需求、禮物與聊天。</p></li><li><span class="number">04</span><h3>揭牌與告別</h3><p>停止新互動，揭牌並道別。</p></li><li><span class="number">05</span><h3>結束播出</h3><p>依序關閉連線，<br>完成節目收尾。</p></li></ol>
             <div class="after-show"><h3>播後接續處理</h3><p>關播後，以文字接續處理剩餘占卜需求。</p></div>
           </div>
           <footer class="footer">以預設節目流程串起開播、互動與收尾</footer>
         </section>
-
-        <section class="slide" id="slide-8" data-page="08" data-title="可參與的主題內容" aria-labelledby="title-8" hidden>
+<section class="slide" id="slide-7" data-page="07" data-title="可參與的主題內容" aria-labelledby="title-7" hidden>
           <header class="slide-head"><span class="wordmark">AI LIVE AVATAR</span><span>互動內容</span></header>
           <div class="content">
             <p class="eyebrow">畫面與對話一起呈現</p>
-            <h2 id="title-8">陪聊、星象與抽牌互動</h2>
+            <h2 id="title-7">陪聊、星象與抽牌互動</h2>
             <p class="lead">以陪聊接近觀眾，再用主題節目建立共同的互動焦點。</p>
             <div class="formats"><div class="format-rows"><article><h3>日常陪聊</h3><p>回應當下心情與話題，<br>延續同場對話。</p></article><article><h3>星象話題</h3><p>暖場時引入主題，<br>為節目打開聊天入口。</p></article><article><h3>抽牌互動</h3><p>以塔羅或雷諾曼呈現牌面，<br>由角色接續解讀。</p></article></div><div class="draw-scene"><span class="label">每日一抽情境示意</span><h3>先選一張，收尾揭曉</h3><div class="cards" aria-label="三張選牌示意，A 左、B 中、C 右"><div class="card"><div class="card-inner" role="img" aria-label="雷諾曼牌背"></div><strong>A</strong><span>左邊</span></div><div class="card"><div class="card-inner" role="img" aria-label="雷諾曼牌背"></div><strong>B</strong><span>中間</span></div><div class="card"><div class="card-inner" role="img" aria-label="雷諾曼牌背"></div><strong>C</strong><span>右邊</span></div></div><p class="note">用角色語音與牌面，把選擇變成共同參與的節目內容。</p></div>
             </div>
           </div>
           <footer class="footer">占卜互動以娛樂與自我整理為目的</footer>
         </section>
-
-        <section class="slide demo-slide" id="slide-9" data-page="09" data-title="AI 主播占卜實拍" aria-labelledby="title-9" hidden>
+<section class="slide demo-slide" id="slide-8" data-page="08" data-title="AI 主播占卜實拍" aria-labelledby="title-8" hidden>
           <header class="slide-head"><span class="wordmark">AI LIVE AVATAR</span><span>占卜實拍</span></header>
           <div class="content">
             <div class="demo-copy">
               <p class="eyebrow">LIVE DEMO</p>
-              <h2 id="title-9">AI 主播占卜，<br>實際互動</h2>
+              <h2 id="title-8">AI 主播占卜，<br>實際互動</h2>
               <p class="lead">用角色語音與牌面，<br>把選擇變成共同參與的節目內容。</p>
             </div>
               <figure class="live-demo">
@@ -479,12 +460,11 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
           </div>
           <footer class="footer">AI 主播占卜實際影片 · YouTube Shorts</footer>
         </section>
-
-        <section class="slide" id="slide-10" data-page="10" data-title="算命研究與文獻整理成 Agent Skill" aria-labelledby="title-10" hidden>
+<section class="slide" id="slide-09" data-page="09" data-title="算命研究與文獻整理成 Agent Skill" aria-labelledby="title-09" hidden>
           <header class="slide-head"><span class="wordmark">AI LIVE AVATAR</span><span>算命知識技能</span></header>
           <div class="content">
             <p class="eyebrow">從文獻整理到直播解讀</p>
-            <h2 id="title-10">算命知識，成為解讀依據</h2>
+            <h2 id="title-09">算命知識，成為解讀依據</h2>
             <p class="lead">研究與文獻整理成 Agent Skill，輔助主播解讀。</p>
             <div class="persona-layout">
               <div class="persona-core"><span class="label">AGENT SKILL</span><h3>算命知識與解讀指引</h3><p>各類算命研究與文獻</p><p>整理後的知識與方法</p><p>主播可使用的解讀指引</p></div>
@@ -493,12 +473,11 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
           </div>
           <footer class="footer">從資料彙整到角色解讀，讓算命知識成為可重複使用的技能</footer>
         </section>
-
-        <section class="slide social" id="slide-11" data-page="11" data-title="社群自動發文" aria-labelledby="title-11" hidden>
+<section class="slide social" id="slide-10" data-page="10" data-title="社群自動發文" aria-labelledby="title-10" hidden>
           <header class="slide-head"><span class="wordmark">AI LIVE AVATAR</span><span>社群自動發文</span></header>
           <div class="content">
             <p class="eyebrow">角色內容，延伸到直播之外</p>
-            <h2 id="title-11">從直播延伸到社群</h2>
+            <h2 id="title-10">從直播延伸到社群</h2>
             <div class="social-layout">
               <div class="social-copy">
                 <span class="label">INSTAGRAM · THREADS</span>
@@ -511,18 +490,17 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
           </div>
           <footer class="footer">實際帳號與貼文畫面：akemi.0330</footer>
         </section>
-
-        <section class="slide closing" id="slide-12" data-page="12" data-title="可探索的合作情境" aria-labelledby="title-12" hidden>
+<section class="slide closing" id="slide-11" data-page="11" data-title="可探索的合作情境" aria-labelledby="title-11" hidden>
           <header class="slide-head"><span class="wordmark">AI LIVE AVATAR</span><span>合作應用</span></header>
           <div class="content">
             <p class="eyebrow">可探索的合作情境</p>
-            <h2 id="title-12">一個角色，<br>一場可以參與的節目</h2>
+            <h2 id="title-11">一個角色，<br>一場可以參與的節目</h2>
             <div class="closing-options"><article><h3>品牌角色陪聊</h3><p>以明確個性與語氣，<br>探索品牌角色的互動方式。</p></article><article><h3>活動互動直播</h3><p>結合觀眾留言與主題互動，<br>設計活動中的參與環節。</p></article><article><h3>主題式內容節目</h3><p>以陪聊或抽牌等內容，<br>規劃固定的節目節奏。</p></article></div>
             <div class="next-step"><span>合作起點</span><p>選定角色與主題，安排一場互動體驗。</p></div>
           </div>
           <footer class="footer">上述為合作方向，內容與導入方式可依場景討論</footer>
         </section>
-<section class="slide qa-slide" id="slide-13" data-page="13" data-title="Q&amp;A" aria-labelledby="qa-title" hidden>
+<section class="slide qa-slide" id="slide-12" data-page="12" data-title="Q&amp;A" aria-labelledby="qa-title" hidden>
   <div class="qa-only"><h1 id="qa-title">Q&amp;A</h1></div>
 </section>
       </div>
