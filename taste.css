@@ -1,0 +1,135 @@
+/* The printed annual · seed 1996839963 · existing Geist and neutral palette.
+ * Slide controls, page counts and semantic diagrams retain presentation conventions. */
+:root {
+  --font-outlier:var(--font-body);
+  --font-mono:var(--font-body);
+  --color-body:var(--color-ink);
+  --color-soft:oklch(94% 0 0);
+  --radius-control:0;
+}
+.deck-theme { --deck-mono:var(--font-body); --mono:var(--font-body); }
+.presentation-page .mono,.deck-avatar .number,.deck-avatar .card strong,
+.deck-eden .wordmark { font-family:var(--font-body); letter-spacing:0; }
+.site-header,.site-brand span,.site-nav a[aria-current="page"],
+.presentation-controls,.deck-theme :is(.navigation,.toolbar,#toolbar),
+.deck-theme :is(#frame,.frame,.deck) { border:0; outline:0; box-shadow:none; }
+.site-nav a[aria-current="page"] { background:var(--color-soft); }
+.site-brand span { padding-left:0; }
+.deck-theme .slide :is(.slide-masthead,.slide-header,.slide-head) {
+  border:0; font-size:calc(18px * var(--deck-unit));
+}
+.deck-theme :is(.slide-masthead,.slide-header,.slide-head) > :last-child { display:none; }
+.deck-theme .slide :is(.eyebrow,.kicker,.item-number),
+.deck-eden .slide-body > div > .mono,.deck-eden .statement > .mono,
+.deck-eden :is(.memory-layers,.creator-flow,.operation-rows,.scope,.extension-center) > div > .mono,
+.deck-eden .extension-center > .mono,.deck-eden .cover-node > .mono { display:none; }
+.deck-theme .slide > :is(footer,.slide-foot,.slide-footer,.footer) { border:0; }
+.deck-theme :is(.cap-entry,.cap-summary,.case-point,.real-label,.format-rows article,
+.plain-list p,.priority-list li,.memory-layers > div,.extensions .item,
+.operation-rows > div,.scope > div,.scope li,.creator-options,.resilience-note,
+.underlined-takeaway,.relationship-copy,.source-rail > div) { border:0; }
+.deck-theme :is(.cover-side span,.hero-principles span) { border:0; }
+.deck-theme :is(.focus-reply,.draw-scene,.scene-record,.map-context > div,
+.cover-node,.source-rail,.creator-core) {
+  border:0; border-radius:0; background:var(--color-soft); box-shadow:none; backdrop-filter:none;
+}
+.deck-theme :is(.evidence-open,.real-example img,.social-shot img,.live-demo iframe) {
+  border:0; border-radius:0; box-shadow:none;
+}
+.deck-agent .pill { background:transparent; color:var(--color-ink); padding:0; border-radius:0; }
+.deck-avatar .hero-tail i { display:none; }
+.deck-avatar .priority-list .number,.deck-eden .real-label > .mono { display:none; }
+.deck-avatar .priority-list li { grid-template-columns:1fr; }
+.deck-eden .real-label { gap:0; }
+.deck-avatar :is(.context-points,.timeline) .number,
+.deck-eden :is(.control-grid,.partnership,.two-lanes,.plot-track) .mono,
+.deck-eden .five-rows > div > span:first-child,.deck-eden .relationship-scale b,
+.deck-eden .quote-label,.deck-avatar .persona-core > .label { display:none; }
+.deck-theme :is(.timeline li,.persona-additions article,.persona-core p,
+.after-show,.closing-options article,.five-rows > div,.control-grid > div,
+.partnership .item,.two-lanes > div,.return-line,.plot-current,
+.definition-list > div,.future-list article,.challenge-rail,.quality-rail) { border:0; }
+.deck-avatar .timeline li::before,.deck-eden .step-line .item::before { display:none; }
+.deck-avatar .timeline li { padding-top:20px; }
+.deck-avatar .persona-core { border-radius:0; }
+.deck-eden .five-rows > div { grid-template-columns:325px minmax(0,1fr); gap:32px; }
+.deck-eden .quote-layout blockquote { font-size:calc(36px * var(--deck-unit)); line-height:1.45; letter-spacing:-.02em; }
+.deck-service .planned { border:0; border-radius:0; background:var(--color-soft); }
+.deck-service .closing-rule { display:none; }
+.deck-eden .cover-node.middle { background:var(--color-ink); color:var(--color-surface); }
+.deck-theme :is(.navigation,.toolbar,#toolbar,.presentation-controls) button {
+  border:0; border-radius:0; background:var(--color-soft);
+}
+.deck-theme :is(.navigation,.toolbar,#toolbar,.presentation-controls) .nav-primary {
+  background:var(--color-ink); color:var(--color-surface);
+}
+.deck-theme .qa-slide { background:var(--color-ink); color:var(--color-surface); }
+.deck-theme .qa-slide::after { color:var(--color-surface); }
+.deck-theme .qa-slide p { color:var(--color-surface); }
+.deck-theme .qa-slide .download-links a {
+  border:0; border-radius:0; background:var(--color-surface); color:var(--color-ink);
+}
+.deck-theme .qa-slide .download-links a:hover { background:var(--color-soft); }
+.overview-layout { gap:24px; }
+.overview-page .hero-note { border:0; padding-left:0; }
+.overview-page .project-grid { grid-template-columns:1fr 1fr; grid-template-rows:1fr 1fr; gap:20px; }
+.overview-page .section-heading p { display:none; }
+.overview-page .project {
+  position:relative; display:grid; grid-template-columns:150px minmax(0,1fr);
+  grid-template-rows:auto 1fr auto; gap:8px 24px; align-items:start;
+  padding:20px; border:0; background:var(--color-soft);
+}
+.overview-page .project:last-child { border:0; }
+.overview-page .project-preview {
+  grid-column:1; grid-row:1 / 4; width:150px; height:100%; min-height:140px;
+  object-fit:cover; object-position:top; background:var(--color-surface);
+}
+.overview-page .project-stat {
+  display:flex; flex-direction:column; justify-content:center; padding:12px;
+  background:var(--color-ink); color:var(--color-surface);
+}
+.overview-page .project[href="ai-eden-harness.html"] .project-preview { object-position:center 75%; }
+.overview-page .project-stat strong { font-size:42px; letter-spacing:-2px; font-variant-numeric:tabular-nums; }
+.overview-page .project-stat strong span { font-size:22px; letter-spacing:0; }
+.overview-page .project-stat p { font-size:18px; color:inherit; margin-top:12px; }
+.overview-page .project :is(h3,.project-summary,.project-end) { grid-column:2; }
+.overview-page .project h3 span,.overview-page .project-topics { display:none; }
+.overview-page .project p { font-size:22px; line-height:1.4; }
+.overview-page .project-end { flex-direction:row; justify-content:space-between; gap:12px; align-items:center; }
+.overview-page .project-action { font-size:18px; }
+.overview-page .project-count { font-family:var(--font-body); font-size:18px; }
+.overview-page .project:hover { background:oklch(90% 0 0); }
+.overview-page .project:active { transform:translateY(1px); }
+@media (min-width:961px) {
+  .overview-page h1 { font-size:52px; }
+  .overview-page .hero .wrap { grid-template-columns:1.4fr 1fr; }
+  .overview-page .hero-note p { font-size:24px; }
+  .overview-page .project h3 { font-size:30px; }
+  .deck-service .result-side { border:0; }
+  .deck-agent .cap-grid { gap:24px 32px; }
+  .deck-agent .cap-entry { padding-top:16px; }
+  .deck-eden .memory-layers > div { padding-inline:32px; }
+  .deck-eden .memory-layers > div:first-child { padding-left:0; }
+  .deck-eden .extensions { grid-template-columns:1fr 1fr; gap:32px 48px; }
+  .deck-eden .extensions .item,.deck-eden .extensions .item:first-child { padding:0; }
+  .deck-eden .extensions .item h3 { margin-bottom:12px; }
+}
+@media (max-width:960px) {
+  .overview-page .project-grid { display:grid; grid-template-columns:1fr; grid-template-rows:auto; }
+  .overview-page .project { grid-template-columns:100px minmax(0,1fr); gap:12px 16px; padding:16px; }
+  .overview-page .project-preview { width:100px; min-height:160px; }
+  .overview-page .project h3 { font-size:24px; }
+  .overview-page .project p { font-size:18px; }
+  .overview-page .project-stat strong { font-size:30px; letter-spacing:-1px; }
+  .overview-page .project-stat p { font-size:16px; }
+  .overview-page .project-end { flex-wrap:wrap; }
+  .overview-page .project-count,.overview-page .project-action { font-size:16px; }
+  .deck-theme .slide :is(.slide-masthead,.slide-header,.slide-head) { font-size:16px; }
+  .deck-avatar .priority-list li { grid-template-columns:1fr; }
+  .deck-eden .cover-node { border:0; border-radius:0; backdrop-filter:none; }
+  .deck-eden .cover-node.middle { background:var(--color-ink); }
+  .deck-eden .five-rows > div { grid-template-columns:1fr; gap:12px; }
+  .deck-eden .five-rows p { grid-column:1; }
+  .deck-eden .quote-layout blockquote { font-size:24px; }
+  .deck-avatar .timeline li { padding-left:0; }
+}

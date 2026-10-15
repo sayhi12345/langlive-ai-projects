@@ -1,0 +1,5 @@
+.DS_Store
+.hallmark/
+.taste-skill/
+__pycache__/
+check_*.py
