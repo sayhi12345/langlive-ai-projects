@@ -124,3 +124,15 @@
   .deck-eden .quote-layout blockquote { font-size:24px; }
   .deck-avatar .timeline li { padding-left:0; }
 }
+
+/* Version evaluation: retain the complete supplied comparison table. */
+.deck-eden .evaluation-slide .real-example { grid-template-columns:minmax(0,740px) minmax(0,1fr); gap:56px; }
+.deck-eden .evaluation-slide .real-example img { width:100%; height:auto; max-height:610px; object-fit:contain; }
+.deck-eden .evaluation-slide .real-copy > h2 { font-size:52px; margin-bottom:20px; }
+.deck-eden .evaluation-slide .real-label { padding:12px 0; }
+.deck-eden .evaluation-slide .real-label p { font-size:28px; line-height:1.45; }
+@media (max-width:960px) {
+  .deck-eden .evaluation-slide .real-example { display:flex; gap:24px; }
+  .deck-eden .evaluation-slide .real-example img { width:100%; max-width:100%; max-height:none; }
+  .deck-eden .evaluation-slide .real-label p { font-size:18px; }
+}
