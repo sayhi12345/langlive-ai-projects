@@ -136,3 +136,7 @@
   .deck-eden .evaluation-slide .real-example img { width:100%; max-width:100%; max-height:none; }
   .deck-eden .evaluation-slide .real-label p { font-size:18px; }
 }
+
+/* Five project entries stay on the existing presentation canvas. */
+@media(min-width:961px){.overview-page .project-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.overview-page .project{grid-template-columns:88px minmax(0,1fr);gap:8px 16px;padding:16px}.overview-page .project-preview{width:88px;height:88px}.overview-page .project h3{font-size:26px}.overview-page .project p{font-size:22px}}
+@media(max-width:960px){.site-nav{overflow-x:auto;justify-content:flex-start;max-width:100%;scrollbar-width:thin}.site-nav a{flex-shrink:0}}
