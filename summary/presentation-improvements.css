@@ -5,8 +5,8 @@
 .deck-service .diagram-container svg{color:var(--presentation-accent)}
 .deck-service .diagram-container .edge{stroke:var(--presentation-accent);stroke-width:2.2}
 .deck-service .diagram-container .node.focal rect{fill:var(--presentation-accent);stroke:var(--presentation-accent)}
-.deck-service .vip-wishlist figure a{display:block;overflow:hidden;max-height:340px;border:1px solid var(--color-rule)}
-.deck-service .vip-wishlist figure img{width:150%;max-width:none;height:auto;border:0}
+.deck-service .vip-wishlist figure a{display:block;border:1px solid var(--color-rule)}
+.deck-service .vip-wishlist figure img{width:auto;max-width:100%;height:auto;max-height:380px;margin:0 auto;border:0}
 .deck-eden #slide-5 .memory-layers small{color:var(--presentation-accent);font-size:26px;font-weight:600}
 .deck-eden #slide-9 .real-example img{width:100%;height:450px;max-height:none;object-fit:cover;object-position:50% 72%}
 .deck-eden .evaluation-slide .eval-summary{align-self:center;text-align:left}
@@ -30,7 +30,7 @@
  .deck-vision .content,.deck-vision .vision-diagram-wrap{min-width:0}
  .deck-agent .case-slide .evidence-open img{height:auto;max-height:none;object-fit:contain}
  .deck-service .vip-wishlist figure a{max-height:none}
- .deck-service .vip-wishlist figure img{width:100%;height:auto;object-fit:contain}
+ .deck-service .vip-wishlist figure img{width:100%;height:auto;max-height:none;object-fit:contain}
  .deck-eden #slide-9 .real-example img{height:auto;max-height:none;object-fit:contain}
  .deck-eden .evaluation-slide .eval-summary table{font-size:19px}
  .deck-eden .evaluation-slide .eval-summary caption{font-size:23px}
