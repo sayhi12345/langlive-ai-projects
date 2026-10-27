@@ -1,0 +1,109 @@
+/* Hallmark · macrostructure: shared project navigation · genre: modern-minimal · theme: existing Vercel */
+/* Hallmark · pre-emit critique: P4 H4 E4 S5 R5 V4 */
+:root { --site-header-height:64px; }
+.site-header {
+  position:fixed; inset:0 0 auto; z-index:20; height:var(--site-header-height);
+  background:var(--color-paper); border-bottom:1px solid var(--color-rule);
+  font-family:var(--font-body);
+}
+.site-header-inner {
+  max-width:1280px; height:100%; margin:auto; padding:0 32px;
+  display:flex; align-items:center; justify-content:space-between; gap:24px;
+}
+.site-brand { display:flex; align-items:center; gap:14px; flex-shrink:0; }
+.site-header a { color:var(--color-body); text-decoration:none; }
+.site-brand strong { color:var(--color-ink); font-size:21px; font-weight:600; letter-spacing:-.7px; }
+.site-brand span { border-left:1px solid var(--color-rule); padding-left:14px; font-size:13px; line-height:20px; }
+.site-nav { display:flex; align-items:center; gap:4px; }
+.site-nav a { display:flex; align-items:center; justify-content:center; min-height:44px; padding:0 12px; border-radius:6px; font-size:14px; line-height:20px; white-space:nowrap; }
+.site-nav a:hover { background:var(--color-soft); color:var(--color-ink); }
+.site-nav a[aria-current="page"] { background:var(--color-ink); color:var(--color-surface); }
+.site-header a:focus-visible { outline:2px solid var(--color-focus); outline-offset:-2px; }
+.presentation-page { padding-top:var(--site-header-height); }
+.presentation-page.customer-deck { padding-bottom:0; background:var(--color-paper); }
+.presentation-stage { position:relative; height:calc(100svh - var(--site-header-height) - 72px); min-height:320px; }
+.presentation-canvas {
+  position:absolute; left:50%; top:50%; width:1280px; height:720px;
+  max-width:none; margin:0; transform:translate(-50%,-50%) scale(var(--scale,1));
+  transform-origin:center; background:var(--color-paper); outline:1px solid var(--color-rule);
+}
+.presentation-controls {
+  height:72px; display:flex; justify-content:center; align-items:center; gap:8px;
+  padding:12px 24px; border-top:1px solid var(--color-rule); background:var(--color-paper);
+}
+.presentation-controls button {
+  display:flex; align-items:center; justify-content:center; height:44px; min-width:44px;
+  padding:0 15px; border:1px solid var(--color-rule); border-radius:6px; background:var(--color-surface);
+  color:var(--color-ink); font:14px var(--font-body); cursor:pointer;
+}
+.presentation-controls button:hover:not(:disabled) { border-color:var(--color-ink); }
+.presentation-controls button:disabled { opacity:.35; cursor:default; }
+.presentation-controls .nav-primary { background:var(--color-ink); color:var(--color-surface); border-color:var(--color-ink); }
+.customer-deck .slide { height:720px; border:0; overflow:hidden; scroll-margin-top:var(--site-header-height); }
+.customer-deck .slide.cover { overflow:hidden; }
+.customer-deck .sr-only { position:absolute; top:0; left:0; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); }
+.presentation-page #stage { height:calc(100dvh - var(--site-header-height) - 78px); }
+.presentation-page .shell { min-height:calc(100svh - var(--site-header-height)); }
+.presentation-page .viewport { height:calc(100svh - var(--site-header-height) - 72px); }
+@media (max-width:960px) {
+  :root { --site-header-height:112px; }
+  .site-header-inner { padding:8px 16px; flex-direction:column; align-items:stretch; gap:8px; }
+  .site-brand { min-height:44px; }
+  .site-nav { overflow-x:auto; flex-shrink:0; scrollbar-width:thin; }
+  .site-nav a { padding:0 10px; font-size:13px; }
+  .presentation-page .viewport { height:auto; }
+  .presentation-stage { height:auto; min-height:0; padding-bottom:92px; }
+  .presentation-canvas { position:static; width:100%; height:auto; transform:none; outline:0; }
+  .customer-deck .slide { width:100%; height:auto; aspect-ratio:auto; min-height:calc(100svh - var(--site-header-height) - 72px); overflow:visible; }
+  .presentation-controls { position:fixed; inset:auto 0 0; z-index:3; height:75px; padding:0 16px; }
+}
+@media (max-width:640px) {
+  .presentation-page #stage { height:auto; }
+}
+@media (max-width:380px) {
+  .site-nav { gap:0; }
+  .site-nav a { padding:0 6px; font-size:12px; }
+}
+@media print {
+  .site-header { display:none!important; }
+  .presentation-page,.presentation-page.customer-deck { padding-top:0; }
+  .presentation-page #stage,.presentation-page .viewport { height:auto; }
+  .presentation-page .shell { min-height:0; }
+  .presentation-stage { height:auto; min-height:0; padding:0; }
+  .presentation-canvas { position:static; transform:none; outline:0; height:auto; }
+  .presentation-controls { display:none!important; }
+}
+
+/* Hallmark · shared navigation and interaction layer · existing Vercel system */
+html,body { overflow-x:clip; }
+h1,h2,h3 { min-width:0; overflow-wrap:anywhere; font-style:normal; }
+a,button { -webkit-tap-highlight-color:transparent; }
+a:focus-visible,button:focus-visible,[tabindex]:focus-visible { outline:2px solid var(--color-focus); outline-offset:4px; }
+.site-header a:focus-visible { outline-offset:-2px; }
+.site-nav a { border-radius:0; }
+.site-nav a[aria-current="page"] { color:var(--color-ink); background:transparent; box-shadow:inset 0 -2px var(--color-ink); font-weight:600; }
+.site-header a:active { color:var(--color-focus); }
+@media (max-width:960px) {
+  .site-header-inner { padding-inline:var(--space-lg); }
+  .site-nav { justify-content:space-between; overflow:visible; }
+  .site-nav a { padding-inline:var(--space-sm); }
+  .presentation-controls { padding-bottom:env(safe-area-inset-bottom,0px); height:calc(75px + env(safe-area-inset-bottom,0px)); }
+  .presentation-stage { padding-bottom:calc(92px + env(safe-area-inset-bottom,0px)); }
+}
+@media (max-width:380px) { .site-nav a { padding-inline:var(--space-xs); } }
+
+@media print { html,body { overflow:visible; } }
+
+/* Taste redesign: shared contrast and restrained interaction feedback. */
+.presentation-page {
+  --body:var(--color-body); --mute:var(--color-muted);
+  --muted:var(--color-body);
+}
+.presentation-page :is(h1,h2,h3) { text-wrap:balance; }
+.presentation-page p { text-wrap:pretty; }
+.site-nav a,.presentation-controls button {
+  transition:background-color 150ms var(--ease-out),color 150ms var(--ease-out);
+}
+@media (prefers-reduced-motion:reduce) {
+  .site-nav a,.presentation-controls button { transition:none; }
+}

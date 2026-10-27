@@ -1,0 +1,40 @@
+<!doctype html><html lang="zh-Hant"><meta charset="utf-8"><title>vision-hair</title><style>
+
+
+
+
+
+:root {
+  --color-paper:oklch(98.5% 0 0);
+  --color-surface:oklch(100% 0 0);
+  --color-ink:oklch(20.5% 0 0);
+  --color-body:oklch(36% 0 0);
+  --color-muted:oklch(43% 0 0);
+  --color-rule:oklch(92.2% 0 0);
+  --color-soft:oklch(96.1% 0 0);
+  --color-control:oklch(55% 0 0);
+  --color-focus:oklch(54% .22 260);
+  --font-display:'Geist','PingFang TC','Microsoft JhengHei',sans-serif;
+  --font-body:var(--font-display);
+  --font-outlier:'Geist Mono','PingFang TC','Microsoft JhengHei',monospace;
+  --font-mono:var(--font-outlier);
+  --space-xs:4px; --space-sm:8px; --space-md:12px; --space-lg:16px;
+  --space-xl:24px; --space-2xl:32px; --space-3xl:40px; --space-4xl:64px;
+  --text-xs:12px; --text-sm:14px; --text-body:16px; --text-lead:18px;
+  --text-title:24px; --text-display:40px;
+  --radius-control:6px;
+  --ease-out:cubic-bezier(.16,1,.3,1);
+  --ease-in:cubic-bezier(.7,0,.84,0);
+  --ease-in-out:cubic-bezier(.65,0,.35,1);
+  --dur-short:150ms;
+}
+
+.deck-vision .slide{position:absolute;inset:0;display:none;grid-template-rows:auto minmax(0,1fr) auto;gap:16px;width:1280px;height:720px;background:var(--color-paper);overflow:hidden}
+.deck-vision .slide.is-active{display:grid}.deck-vision :is(h1,h2,h3,p,figure){margin:0}.deck-vision header>h2{margin-bottom:12px}.deck-vision .subtitle{max-width:1080px}.deck-vision .content{min-height:0;display:flex;flex-direction:column;justify-content:center;gap:20px}.deck-vision .slide-footer{display:flex;justify-content:space-between;gap:20px}.deck-vision .slide-footer>span:last-child{white-space:nowrap;font-variant-numeric:tabular-nums}.deck-vision a{color:inherit;text-underline-offset:4px}.deck-vision a:focus-visible{outline:3px solid var(--color-focus);outline-offset:4px}
+.vision-diagram{display:block;width:100%;height:auto;min-width:1152px}.vision-diagram .v-edge{fill:none;stroke:var(--color-muted);stroke-width:1.3}.vision-diagram .v-node rect{fill:var(--color-surface);stroke:var(--color-control);stroke-width:1}.vision-diagram .v-focal rect{fill:var(--color-ink);stroke:var(--color-ink);stroke-width:1}.vision-diagram text{text-anchor:middle;font-family:var(--font-body);fill:var(--color-ink)}.vision-diagram .v-name{font-size:29px;font-weight:600}.vision-diagram .v-sub{font-size:24px;fill:var(--color-muted)}.vision-diagram .v-focal .v-name{fill:var(--color-surface)}.vision-diagram .v-focal .v-sub{fill:#dedede}.vision-diagram-wrap{width:100%;overflow-x:auto}.deck-vision .vision-note{font-size:22px;line-height:1.5;color:var(--color-body)}
+.vision-demo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:48px;align-items:center}.vision-demo-copy h3{font-size:32px;line-height:1.4;margin-bottom:18px}.vision-demo-copy p{font-size:26px;line-height:1.5;color:var(--color-body)}.vision-video{min-width:0}.vision-video iframe{display:block;width:100%;height:auto;aspect-ratio:16/9;border:0;background:var(--color-soft)}.vision-video figcaption{font-size:18px!important;line-height:1.5;margin-top:10px}.vision-video a{display:inline-flex;align-items:center;min-height:36px}
+.vision-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}.vision-pair iframe{aspect-ratio:16/9}.vision-evidence{display:flex;justify-content:center;gap:24px}.vision-evidence img{height:200px;max-width:30%;object-fit:contain}.vision-hair-mask{width:100%;max-height:150px;object-fit:contain;margin-top:20px}.vision-hair .vision-diagram{min-width:440px}.vision-hair .vision-diagram .v-name{font-size:44px}.vision-hair .vision-diagram .v-sub{font-size:36px}
+.vision-methods{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 40px}.vision-methods article{padding:20px;background:var(--color-soft)}.vision-methods h3{font-size:30px;line-height:1.4;margin-bottom:12px}.vision-methods p{font-size:24px;line-height:1.5}.vision-table{width:100%;border-collapse:collapse;font-size:28px;line-height:1.5;font-variant-numeric:tabular-nums}.vision-table :is(td,th){padding:14px 20px;text-align:left;border-bottom:1px solid var(--color-rule)}.vision-table th{font-weight:600;background:var(--color-soft)}.vision-table td:last-child{font-weight:600}.vision-mobile{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:center}.vision-mobile .vision-methods{gap:16px}.vision-mobile .vision-methods article{padding:16px}.vision-mobile .vision-methods h3{font-size:25px}.vision-mobile .vision-methods p{font-size:21px}.vision-mobile .vision-table{font-size:25px}
+@media(max-width:960px){.deck-vision .slide{position:relative;inset:auto;width:100%;height:auto;min-height:calc(100svh - var(--site-header-height) - 75px);overflow:visible}.vision-demo,.vision-pair,.vision-mobile{grid-template-columns:minmax(0,1fr);gap:24px}.vision-demo-copy h3{font-size:26px}.vision-demo-copy p{font-size:20px}.vision-evidence{gap:12px}.vision-evidence img{height:160px}.vision-methods{grid-template-columns:minmax(0,1fr);gap:16px}.vision-methods h3{font-size:24px}.vision-methods p{font-size:19px}.vision-table{font-size:20px}.vision-table :is(td,th){padding:12px}.deck-vision .vision-note{font-size:18px}.deck-vision .qa-slide{display:none}.deck-vision .qa-slide.is-active{display:grid}}
+@media print{.deck-vision .slide{display:grid!important;position:relative;inset:auto;break-after:page}}
+body{margin:0;background:var(--color-paper);font-family:var(--font-body)}svg{width:1280px;min-width:1280px}</style><svg class="vision-diagram" viewBox="0 0 1280 720" role="img" aria-labelledby="vision-hair-title vision-hair-desc"><title id="vision-hair-title">染髮效果的概念流程</title><desc id="vision-hair-desc">原始畫面，接著頭髮區域，接著顏色合成。</desc><defs><marker id="vision-hair-arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="var(--color-muted)"/></marker></defs><path class="v-edge" d="M312 336 H516" marker-end="url(#vision-hair-arrow)"/><path class="v-edge" d="M764 336 H968" marker-end="url(#vision-hair-arrow)"/><g class="v-node "><rect x="64" y="256" width="248" height="160" rx="6"/><text class="v-name" x="188" y="304">原始畫面</text><text class="v-sub" x="188" y="350">保留人物</text><text class="v-sub" x="188" y="386">與背景影像</text></g><g class="v-node "><rect x="516" y="256" width="248" height="160" rx="6"/><text class="v-name" x="640" y="304">頭髮區域</text><text class="v-sub" x="640" y="350">語意分割</text><text class="v-sub" x="640" y="386">產生區域遮罩</text></g><g class="v-node v-focal"><rect x="968" y="256" width="248" height="160" rx="6"/><text class="v-name" x="1092" y="304">顏色合成</text><text class="v-sub" x="1092" y="350">套用指定顏色</text><text class="v-sub" x="1092" y="386">其他區域保留</text></g></svg></html>
