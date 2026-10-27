@@ -8,4 +8,4 @@
 @media(max-width:960px){.deck-vision .slide{position:relative;inset:auto;width:100%;height:auto;min-height:calc(100svh - var(--site-header-height) - 75px);overflow:visible}.vision-demo,.vision-pair,.vision-mobile{grid-template-columns:minmax(0,1fr);gap:24px}.vision-demo-copy h3{font-size:26px}.vision-demo-copy p{font-size:20px}.vision-evidence{gap:12px}.vision-evidence img{height:200px}.vision-methods{grid-template-columns:minmax(0,1fr);gap:16px}.vision-methods h3{font-size:24px}.vision-methods p{font-size:19px}.vision-table{font-size:20px}.vision-table :is(td,th){padding:12px}.deck-vision .vision-note{font-size:18px}.deck-vision .qa-slide{display:none}.deck-vision .qa-slide.is-active{display:grid}}
 @media print{.deck-vision .slide{display:grid!important;position:relative;inset:auto;break-after:page}}
 
-.deck-vision .slide.qa-slide{grid-template-rows:1fr;gap:0}
+.deck-vision .slide.qa-slide{grid-template-rows:1fr;gap:0;background:var(--color-ink)}
