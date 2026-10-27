@@ -1,0 +1,40 @@
+/* Hallmark · presentation refinement · existing Geist system · blue highlight */
+:root{--presentation-accent:oklch(42% .17 255)}
+.deck-agent .case-slide .case-point:first-child h3,.deck-service .vip-copy h3,.deck-avatar .focus-reply h3,.deck-avatar .draw-scene h3,.deck-eden .map-core strong,.deck-eden .relationship-scale b,.deck-vision .vision-mobile .vision-table td:last-child{color:var(--presentation-accent)}
+.deck-agent .case-slide .evidence-open img{width:100%;height:100%;max-width:none;max-height:none;object-fit:cover;object-position:0% 10%}
+.deck-service .diagram-container svg{color:var(--presentation-accent)}
+.deck-service .diagram-container .edge{stroke:var(--presentation-accent);stroke-width:2.2}
+.deck-service .diagram-container .node.focal rect{fill:var(--presentation-accent);stroke:var(--presentation-accent)}
+.deck-service .vip-wishlist figure a{display:block;overflow:hidden;max-height:340px;border:1px solid var(--color-rule)}
+.deck-service .vip-wishlist figure img{width:150%;max-width:none;height:auto;border:0}
+.deck-eden #slide-5 .memory-layers small{color:var(--presentation-accent);font-size:26px;font-weight:600}
+.deck-eden #slide-9 .real-example img{width:100%;height:450px;max-height:none;object-fit:cover;object-position:50% 72%}
+.deck-eden .evaluation-slide .eval-summary{align-self:center;text-align:left}
+.deck-eden .evaluation-slide .eval-summary table{border-collapse:collapse;width:100%;font-size:27px;line-height:1.4}
+.deck-eden .evaluation-slide .eval-summary caption{text-align:left;font-size:30px;font-weight:600;color:var(--presentation-accent);padding-bottom:16px}
+.deck-eden .evaluation-slide .eval-summary :is(th,td){padding:20px 12px;border-bottom:1px solid var(--color-rule);text-align:left;font-weight:400}
+.deck-eden .evaluation-slide .eval-summary th[scope=row]{font-weight:600}
+.deck-eden .evaluation-slide .eval-summary figcaption{font-size:22px;text-align:left}
+.deck-eden .evaluation-slide .eval-summary a{color:var(--presentation-accent)}
+.deck-avatar .cards .card-inner{transform:scale(1.12)}
+.deck-avatar .social-shot figcaption{font-size:20px;white-space:nowrap}
+.deck-avatar .social-copy h3,.deck-agent .cap-summary,.deck-eden #slide-9 .real-label:last-child h3,.deck-vision .vision-demo-copy h3{color:var(--presentation-accent)}
+.deck-vision .vision-video figcaption{font-size:22px!important}
+.deck-vision .vision-mobile .vision-table{font-size:27px}
+.deck-vision .vision-mobile .vision-methods p{font-size:23px}
+@media(min-width:961px){
+ .deck-avatar .social-layout{grid-template-columns:minmax(0,1fr) 225px 600px;gap:28px}
+}
+@media(max-width:960px){
+ .deck-vision .slide{grid-template-columns:minmax(0,1fr)}
+ .deck-vision .content,.deck-vision .vision-diagram-wrap{min-width:0}
+ .deck-agent .case-slide .evidence-open img{height:auto;max-height:none;object-fit:contain}
+ .deck-service .vip-wishlist figure a{max-height:none}
+ .deck-service .vip-wishlist figure img{width:100%;height:auto;object-fit:contain}
+ .deck-eden #slide-9 .real-example img{height:auto;max-height:none;object-fit:contain}
+ .deck-eden .evaluation-slide .eval-summary table{font-size:19px}
+ .deck-eden .evaluation-slide .eval-summary caption{font-size:23px}
+ .deck-eden .evaluation-slide .eval-summary :is(th,td){padding:12px 8px}
+ .deck-eden .evaluation-slide .eval-summary figcaption{font-size:18px}
+ .deck-vision .vision-video figcaption{font-size:18px!important}
+}
