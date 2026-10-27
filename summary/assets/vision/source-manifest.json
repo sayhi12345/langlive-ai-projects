@@ -1,7 +1,7 @@
 {
   "source": "https://docs.google.com/presentation/d/1aVC5-fvu-_ouRb-nlmbDT7qB-iQ6_GKG1F55djxvEqw/edit",
   "source_title": "直播AI應用_2025",
-  "pages": "6–10, 13–16; summary omits pet-face and hair-color slides",
+  "pages": "7–10, 13–16; excludes training, pet-face, and hair-color slides",
   "diagrams": "simplified concept redraws; not exact implementation diagrams",
   "videos": [
     {
