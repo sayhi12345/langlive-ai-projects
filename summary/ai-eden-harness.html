@@ -20,6 +20,7 @@
 <link rel="stylesheet" href="deck-theme.css">
 <link rel="stylesheet" href="taste.css">
 <link rel="stylesheet" href="presentation-improvements.css">
+<link rel="stylesheet" href="image-viewer.css">
 </head><body class="deck-theme deck-eden presentation-page">
 <header class="site-header">
   <div class="site-header-inner">
@@ -100,7 +101,7 @@
 <section class="slide screenshot-slide" id="slide-9" data-title="聊天情境，生成候選圖片" aria-label="第 9 頁：聊天情境，生成候選圖片">
 <header class="slide-header"><div class="brand">EDEN<span>AI</span></div><div class="chapter mono">05 · 內容與運作</div></header>
 <div class="content"><div class="eyebrow mono">SCENE IMAGE GENERATION</div><h2 class="slide-title">聊天情境，生成候選圖片</h2><div class="slide-body">
-<div class="real-example"><figure><a href="eden-scene-generation.png" target="_blank" rel="noopener noreferrer" aria-label="放大情境圖片生成截圖（另開分頁）"><img src="eden-scene-generation.png" alt="EDEN 情境圖片生成介面：根據夜晚直播間的聊天情境整理圖片提示詞，下方呈現三張候選圖片供使用者選擇。" width="864" height="1928"></a><figcaption>候選圖片局部 · 點擊查看完整畫面</figcaption></figure>
+<div class="real-example"><figure><a data-image-viewer href="eden-scene-generation.png" target="_blank" rel="noopener noreferrer" aria-label="放大情境圖片生成截圖"><img src="eden-scene-generation.png" alt="EDEN 情境圖片生成介面：根據夜晚直播間的聊天情境整理圖片提示詞，下方呈現三張候選圖片供使用者選擇。" width="864" height="1928"></a><figcaption>候選圖片局部 · 點擊查看完整畫面</figcaption></figure>
 <div class="real-copy"><span class="mono">SCENE IMAGE GENERATION</span><h2>聊天情境，<br>生成候選圖片</h2>
 <div class="real-label"><span class="mono">01</span><div><h3>承接聊天情境</h3><p>從對話擷取場景、角色互動與情緒。</p></div></div>
 <div class="real-label"><span class="mono">02</span><div><h3>自動產生圖片提示詞</h3><p>轉成畫面描述，補上動作、光線與構圖。</p></div></div>
@@ -121,7 +122,7 @@
 <section class="slide screenshot-slide evaluation-slide" id="slide-12" data-title="每次重大更新前，先跑對話評估" aria-label="第 12 頁：每次重大更新前，先跑對話評估">
 <header class="slide-header"><div class="brand">EDEN<span>AI</span></div><div class="chapter mono">05 · 品質評估</div></header>
 <div class="content"><h2 class="slide-title">每次重大更新前，先跑對話評估</h2><div class="slide-body"><div class="real-example">
-<figure class="eval-summary"><table><caption>模型比較 · 單次範例</caption><thead><tr><th scope="col">評估維度</th><th scope="col">範例結果</th></tr></thead><tbody><tr><th scope="row">長度遵循</th><td>Seed–SC：29/32 vs 0/32</td></tr><tr><th scope="row">延遲</th><td>baseline：9.1 秒 vs 14.9 秒</td></tr><tr><th scope="row">長期記憶召回</th><td>平手：5/5、3/3</td></tr></tbody></table><figcaption><a href="assets/eden-dialogue-eval-example.png" target="_blank" rel="noopener noreferrer">查看完整比較截圖 ↗</a></figcaption></figure>
+<figure class="eval-summary"><table><caption>模型比較 · 單次範例</caption><thead><tr><th scope="col">評估維度</th><th scope="col">範例結果</th></tr></thead><tbody><tr><th scope="row">長度遵循</th><td>Seed–SC：29/32 vs 0/32</td></tr><tr><th scope="row">延遲</th><td>baseline：9.1 秒 vs 14.9 秒</td></tr><tr><th scope="row">長期記憶召回</th><td>平手：5/5、3/3</td></tr></tbody></table><figcaption><a data-image-viewer href="assets/eden-dialogue-eval-example.png" target="_blank" rel="noopener noreferrer">查看完整比較截圖</a></figcaption></figure>
 <div class="real-copy"><h2>每次重大更新前，<br>先跑對話評估</h2>
 <div class="real-label"><div><h3>同一組情境，對照版本</h3><p>固定角色、設定與測試題，<br>比較更新前後的對話表現。</p></div></div>
 <div class="real-label"><div><h3>跨回合檢查品質</h3><p>檢查人設、記憶與故事連貫，<br>並量測格式、重複與延遲。</p></div></div>
@@ -349,4 +350,5 @@ DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
 OTHER DEALINGS IN THE FONT SOFTWARE.
 --><script src="deck-ui.js"></script>
+<script src="image-viewer.js"></script>
 </body></html>
