@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>講者介紹｜浪LIVE AI 專案</title>
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="site.css">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; padding-top: var(--site-header-height); color: var(--color-ink); background: var(--color-paper); font-family: var(--font-body); }
+    .profile { max-width: 1152px; margin: 0 auto; padding: 64px 32px; display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 64px; align-items: start; }
+    .portrait { width: 100%; aspect-ratio: 302 / 286; background: url('assets/speaker-profile-reference.png') 7.64% 24.02% / 369% 296.5% no-repeat; border-radius: 8px; }
+    .eyebrow { margin: 0 0 12px; color: var(--color-muted); font-size: 18px; }
+    h1 { margin: 0; font-size: 56px; line-height: 1.15; }
+    .role { margin: 12px 0 24px; font-size: 26px; font-weight: 600; }
+    .intro { margin: 0 0 28px; font-size: 24px; line-height: 1.6; }
+    h2 { margin: 24px 0 10px; font-size: 22px; }
+    .details { margin: 0; font-size: 22px; line-height: 1.65; }
+    .contact { margin: 28px 0 0; font-size: 18px; color: var(--color-muted); }
+    .contact a { color: inherit; }
+    @media (max-width: 700px) {
+      .profile { padding: 32px 24px; grid-template-columns: 1fr; gap: 28px; }
+      .portrait { max-width: 260px; }
+      h1 { font-size: 42px; }
+      .role { font-size: 22px; }
+      .intro, .details { font-size: 19px; }
+    }
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="site-brand" href="index.html"><strong>浪LIVE</strong><span>AI 專案 · 2026</span></a>
+    <nav class="site-nav" aria-label="專案導覽"><a href="index.html">專案總覽</a><a href="speaker.html" aria-current="page">講者介紹</a><a href="langlive-ai-agent.html">浪小蝦</a><a href="langlive-ai-customer-service.html">AI 客服</a><a href="ai-live-avatar.html">虛擬主播</a><a href="ai-eden-harness.html">EDEN AI</a><a href="ai-live-vision.html">視覺 AI</a></nav>
+  </div>
+</header>
+<main class="profile">
+  <div class="portrait" role="img" aria-label="林世海照片"></div>
+  <div>
+    <p class="eyebrow">講者介紹</p>
+    <h1>林世海</h1>
+    <p class="role">技術經理 · 浪LIVE AI Team</p>
+    <p class="intro">曾任 ASUS ZenWatch 演算法開發團隊，現於浪LIVE投入 AI 相關應用。</p>
+    <h2>專長</h2>
+    <p class="details">視覺機器學習演算法 · 模型部署 · AI Agent 應用</p>
+    <h2>代表專案</h2>
+    <p class="details">浪LIVE AI 禮物 · 浪LIVE NSFW 內容阻擋 · PopoNote 推薦</p>
+    <p class="contact"><a href="mailto:shane.lin@langlive.com">shane.lin@langlive.com</a> · Taipei, TW</p>
+  </div>
+</main>
+</body>
+</html>
